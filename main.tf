@@ -5,7 +5,7 @@ provider "aws" {
 
 resource "aws_s3_bucket" "main" {
   bucket = "s3-spa-deploy"
-  acl    = "private"
+  acl    = "public-read"
 
   website {
     index_document = "index.html"
