@@ -103,5 +103,39 @@ dist
 # TernJS port file
 .tern-port
 
-.terraform
+# tf
+
+*.dll
+*.exe
+.DS_Store
+example.tf
+terraform.tfplan
 terraform.tfstate
+bin/
+modules-dev/
+/pkg/
+website/.vagrant
+website/.bundle
+website/build
+website/node_modules
+.vagrant/
+*.backup
+./*.tfstate
+.terraform/
+*.log
+*.bak
+*~
+.*.swp
+.idea
+*.iml
+*.test
+*.iml
+
+website/vendor
+
+# Test exclusions
+!command/testdata/**/*.tfstate
+!command/testdata/**/.terraform/
+
+# Coverage
+coverage.txt
