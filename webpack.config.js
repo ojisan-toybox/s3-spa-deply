@@ -25,4 +25,7 @@ module.exports = {
     extensions: [".js", ".ts", ".tsx", ".css", ".gif", "jpg", "png", "mp4"],
   },
   plugins: [new HtmlWebpackPlugin({ template: "./src/index.html" })],
+  devServer: {
+    historyApiFallback: true,
+  },
 };
